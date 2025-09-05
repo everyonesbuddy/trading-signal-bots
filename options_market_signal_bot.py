@@ -228,7 +228,11 @@ stock_watchlist = [
     "AAPL", "TSLA", "NVDA", "AMZN", "SPY", "MSFT", "META", "GOOGL", "NFLX", "AMD",
     "INTC", "BABA", "QQQ", "IWM", "SOFI", "PLTR", "ROKU", "F",
     "GM", "PINS", "DKNG", "CHPT", "NIO", "RIOT", "MARA", "CVNA",
-    "UPST", "LCID", "AFRM", "T", "PFE", "BBD", "DNA"
+    "UPST", "LCID", "AFRM", "T", "PFE", "BBD", "DNA",
+
+    # Added cheaper / low-priced stocks
+    "AMC", "SNDL", "ZNGA", "FCEL", "SBLK", "RBLX", "SIRI", "CCL", "UAL", "RCL",
+    "GME", "BBDO", "NOK", "VZ", "GE", "TAT", "MARA", "KOSS", "NIO", "SOS", "ADXS"
 ]
 
 run_options_bot(stock_watchlist)
