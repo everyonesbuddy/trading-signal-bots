@@ -223,16 +223,17 @@ def run_options_bot(tickers):
         except Exception as e:
             print(f"❌ Error processing {ticker}: {e}")
 
-# Your watchlist
+# Combined watchlist: Large-cap + cheaper stocks (LCID prioritized)
 stock_watchlist = [
+    # Large-cap / Tech / ETFs
     "AAPL", "TSLA", "NVDA", "AMZN", "SPY", "MSFT", "META", "GOOGL", "NFLX", "AMD",
-    "INTC", "BABA", "QQQ", "IWM", "SOFI", "PLTR", "ROKU", "F",
-    "GM", "PINS", "DKNG", "CHPT", "NIO", "RIOT", "MARA", "CVNA",
-    "UPST", "LCID", "AFRM", "T", "PFE", "BBD", "DNA",
+    "INTC", "BABA", "QQQ", "IWM",
 
-    # Added cheaper / low-priced stocks
-    "AMC", "SNDL", "ZNGA", "FCEL", "SBLK", "RBLX", "SIRI", "CCL", "UAL", "RCL",
-    "GME", "BBDO", "NOK", "VZ", "GE", "TAT", "MARA", "KOSS", "NIO", "SOS", "ADXS"
+    # Mid / Smaller-cap cheaper stocks (LCID first)
+    "LCID", "F", "SOFI", "NIO", "PLTR", "UPST", "AMC", "SNDL", "SIRI", "RBLX",
+    "PFE", "DNA", "ZNGA", "RIOT", "MARA", "FCEL", "SBLK",
+    "RCL", "UAL", "CCL", "FUBO", "WORK", "CLNE", "VYGR", "VGZ"
 ]
+
 
 run_options_bot(stock_watchlist)
